@@ -1,0 +1,6 @@
+title,amount,date,method,cardUsed,category,referenceNumber,statementPeriod
+Netflix.com CA,15.99,7/30/20,Internet,..2342,Streaming,56412538700,current
+BP GA,10.59,7/28/20,Chip,..2342,Gas,45628324000,current
+Target GA,20,7/28/20,Chip,..1234,Grocery,4562143754,current
+Walmart GA,15.5,7/26/20,Swipe,..2342,Grocery,45647632131,current
+Amazon.com WA,50.21,7/29/20,Internet,..1234,Online Shopping,5.67567E+11,current
