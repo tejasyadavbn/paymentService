@@ -24,13 +24,13 @@ public class PreviousPaymentHistoryHandler {
 		// Backend call goes here. For demonstration, using data from CSV file.
 		// systemB.csv /DB
 		if ("Y".equalsIgnoreCase(getDataFromDB)) {
-			if (Character.isDigit(timeRange.charAt(0))) {
+			if (Character.isDigit(timeRange.charAt(0)) || "all".equalsIgnoreCase(timeRange)) {
 				return paymentsServiceHelper.getPreviousTransactionInfoFromDB(customerId, "ALLRECORDS");
 			} else {
 				return paymentsServiceHelper.getPreviousTransactionInfoFromDB(customerId, timeRange);
 			}
 		} else {
-			if (Character.isDigit(timeRange.charAt(0))) {
+			if (Character.isDigit(timeRange.charAt(0)) || "all".equalsIgnoreCase(timeRange)) {
 				return paymentsServiceHelper.getTransactionInfoFromCSV(customerId, timeRange);
 			} else {
 				return paymentsServiceHelper.getTransactionInfoFromCSV(customerId, timeRange).stream()
